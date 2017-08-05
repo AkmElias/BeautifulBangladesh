@@ -112,51 +112,51 @@ public class CetagoryAllAdapter extends RecyclerView.Adapter<CetagoryAllAdapter.
         @Override
         public void onClick(View v) {
 
-//            int position=getAdapterPosition();
-//            newsModel=this.postLists.get(position);
-//            Intent intent=new Intent(this.context,NextActivity.class);
-//            intent.putExtra("id",newsModel.getId());
-//            intent.putExtra("name",newsModel.getTitle());
-//            intent.putExtra("description",newsModel.getDetails());
-//            intent.putExtra("rating",newsModel.getRating());
-//            intent.putExtra("image1",newsModel.getImage1());
-//            intent.putExtra("image2",newsModel.getImage2());
-//            intent.putExtra("image3",newsModel.getImage3());
-//
-//
-//                intent.putExtra("loc",newsModel.getLocation());
-//
-//
-//            intent.putExtra("lat","24.9045");
-//            intent.putExtra("lon","91.8611");
-//            intent.putExtra("division","Sylhet");
-//            intent.putExtra("district","Sylhet");
-//
-//
-//
-//
-//            //new task
-//            // SQLite database handler
-//            dbb = new SQLiteHandlerForOnePlace(context.getApplicationContext());
-//            // Inserting row in users table
-//            dbb.deleteUsers();
-//
-//            dbb.addUser(newsModel.getId(),newsModel.getTitle(),newsModel.getDetails(),newsModel.getRating(),newsModel.getImage1(),newsModel.getImage2(),newsModel.getImage3(),newsModel.getLocation(),"24.9045","91.8611","Sylhet","Sylhet");
-//            //new task end
-//
-//            //new task
-//            // SQLite database handler
-//            db = new SQLiteHandler(context.getApplicationContext());
-//            place_id=newsModel.getId();
-//            // Inserting row in users table
-//            db.deleteUsers();
-//            db.addUser(place_id);
-//            //new task end
-//
-//
-//
-//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            context.startActivity(intent);
+           int position=getAdapterPosition();
+           newsModel=this.postLists.get(position);
+           Intent intent=new Intent(this.context,NextActivity.class);
+           intent.putExtra("id",newsModel.getId());
+           intent.putExtra("name",newsModel.getTitle());
+           intent.putExtra("description",newsModel.getDetails());
+           intent.putExtra("rating",newsModel.getRating());
+           intent.putExtra("image1",newsModel.getImage1());
+           intent.putExtra("image2",newsModel.getImage2());
+           intent.putExtra("image3",newsModel.getImage3());
+
+
+               intent.putExtra("loc",newsModel.getLocation());
+
+
+           intent.putExtra("lat","24.9045");
+           intent.putExtra("lon","91.8611");
+           intent.putExtra("division","Sylhet");
+           intent.putExtra("district","Sylhet");
+
+
+
+
+           //new task
+           // SQLite database handler
+           dbb = new SQLiteHandlerForOnePlace(context.getApplicationContext());
+           // Inserting row in users table
+           dbb.deleteUsers();
+
+           dbb.addUser(newsModel.getId(),newsModel.getTitle(),newsModel.getDetails(),newsModel.getRating(),newsModel.getImage1(),newsModel.getImage2(),newsModel.getImage3(),newsModel.getLocation(),"24.9045","91.8611","Sylhet","Sylhet");
+           //new task end
+
+           //new task
+           // SQLite database handler
+           db = new SQLiteHandler(context.getApplicationContext());
+           place_id=newsModel.getId();
+           // Inserting row in users table
+           db.deleteUsers();
+           db.addUser(place_id);
+           //new task end
+
+
+
+           intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+           context.startActivity(intent);
 
 
         }
