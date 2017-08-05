@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/proficon"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <Button
+                    android:id="@+id/btnChoose"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/four"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="#4D8621"
+                android:drawablePadding="20dp"
+                android:gravity="left|center"
+                android:hint="Username"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="#4D8621"
+                android:drawablePadding="20dp"
+                android:gravity="left|center"
+                android:hint="E-mail"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="#4D8621"
+                android:drawablePadding="20dp"
+                android:gravity="left|center"
+                android:hint="Password"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#619A35"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

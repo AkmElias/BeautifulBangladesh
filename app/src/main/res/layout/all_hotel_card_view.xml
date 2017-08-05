@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/tools"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:id="@+id/progress_wheel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                wheel:matProg_barColor="#5588FF"
+                android:layout_gravity="center"
+                wheel:matProg_progressIndeterminate="true" />
+
+
+
+            <ImageView
+                android:id="@+id/card_image"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:background="#ccc"
+                android:layout_height="170dp" />
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_alignParentLeft="true"
+            android:id="@+id/card_title"
+            android:text="New York City"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/card_rating"
+            android:layout_marginTop="5dp"
+            android:text="Rating :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/fact"
+            android:lines="2"
+            android:textColor="#000"
+            android:text="@string/text_generic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
